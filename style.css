@@ -1,0 +1,169 @@
+body {
+    background-color: #e89849;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered Game Card */
+.game-container {
+    background: rgb(83, 206, 212);
+    padding: 40px;
+    border-radius: 12px;
+    border: 3px solid #333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    font-size: 2.5rem;
+    margin: 0 10px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#rock {
+    background-color: #ff4d4d;
+}
+
+#paper {
+    background-color: #2196f3;
+}
+
+#scissors {
+    background-color: #4caf50;
+}
+
+#user-score {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+#computer-score {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.reset-btn:hover {
+    background-color: black;
+}
+
+.choices-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice-box {
+    text-align: center;
+}
+
+.choice-box img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: #121212;
+}
+
+.dark .game-container {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* VS */
+.vs {
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+/* Animations */
+.win-glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px gold; }
+    to { box-shadow: 0 0 25px orange; }
+}
+
+/* Thinking Animation */
+.thinking {
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .game-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .choices-display {
+        flex-direction: column;
+    }
+}
