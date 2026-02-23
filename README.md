@@ -56,19 +56,8 @@ All game logic, state handling, and UI interactions are implemented manually wit
 
 ---
 
-## 🧠 AI Logic (Hard Mode)
-
-In **Hard Mode**, the computer predicts the player’s last move and selects the counter move instead of choosing randomly.  
-This demonstrates basic adaptive AI behavior and conditional logic control.
-
----
-
 ## 🔗 Live Demo
 
 👉 https://janken-beta.vercel.app/
 
 ---
-
-### 💡 Summary
-
-This project showcases the ability to design, build, and deploy a complete interactive web application using core frontend technologies — demonstrating clean logic structure, thoughtful UI/UX, and deploy-ready production skills.
